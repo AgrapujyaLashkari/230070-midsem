@@ -1,0 +1,122 @@
+{
+  "student_metadata": {
+    "name": "Agrapujya Lashkari",
+    "roll_number": "230070",
+    "course": "Advanced Machine Learning",
+    "exam": "Mid-Semester Examination",
+    "part": "Part A",
+    "submission_date": "2026-03-02"
+  },
+  "llm_tools_used": [
+    {
+      "tool_name": "Perplexity",
+      "model": "Default",
+      "provider": "Perplexity AI"
+    },
+    {
+      "tool_name": "Gemini",
+      "model": "Gemini 3 Thinking",
+      "provider": "Google"
+    }
+  ],
+  "full_llm_interaction_log": [
+    {
+      "interaction_id": 1,
+      "date": "2026-03-02",
+      "tool_name": "Perplexity",
+      "model": "Default",
+      "purpose": "Broad screening of papers matching CORE A* venues and 2009-2012 constraints while avoiding duplicates from the class response sheet.",
+      "prompt": "I have to select a research paper which fulfils some constraints which are mentioned in the midsem_PartA pdf which I have provided to you, list down the requirements and find a research paper which fulfils all the criteria mentioned in the pdf and also remember that don't take the papers which are already taken by the other students I have uploaded the excel sheet of the already taken research papers",
+      "llm_response_used": "Yes",
+      "how_it_helped": "Identified the initially proposed 'Discourse Parser' paper and confirmed it was not present in the current submission list.",
+      "student_verification": "I checked the official CORE portal to confirm the venue ranking and searched the live response sheet for the suggested paper title.",
+      "confidence_level": 5
+    },
+    {
+      "interaction_id": 2,
+      "date": "2026-03-02",
+      "tool_name": "Perplexity",
+      "model": "Default",
+      "purpose": "Feasibility assessment of dataset requirements and searching for alternative papers to avoid licensed LDC data risks.",
+      "prompt": "does this fulfils the dataset criteria... and if yes then find some dataset for it and also tell find 2 more papers may be different and their dataset for these for me to choose from 3 papers that what should I prefer",
+      "llm_response_used": "Yes",
+      "how_it_helped": "Flagged potential licensing issues with the first paper and suggested 2 more papers - Hierarchical SVM paper and Multi-class L2,1-norm SVM with bio datasets from which I chose the ICML 2011 Hierarchical SVM paper as a safer alternative with public data.",
+      "student_verification": "I researched the 'GUM' corpus and LIBSVM archives to verify that the suggested datasets were truly open-access.",
+      "confidence_level": 4
+    },
+    {
+      "interaction_id": 3,
+      "date": "2026-03-02",
+      "tool_name": "Gemini",
+      "model": "Gemini 3 Thinking",
+      "purpose": "Detailed constraint validation for the 'Hierarchical Classification via Orthogonal Transfer' paper.",
+      "prompt": "tell me how is this research paper \"Hierarchical SVM with orthogonality regularizer\" can I choose it? analyze that this research paper follows the constraints or not and if yes then provide all the information about it like official link, dataset link",
+      "llm_response_used": "Yes",
+      "how_it_helped": "Confirmed the paper is from 2011, ICML (CORE A*), and uses public RCV1 text data, making it a highly compliant choice.",
+      "student_verification": "I cross-referenced the publication year (2011) and venue (ICML) with the CORE ranking guidelines provided in the exam PDF.",
+      "confidence_level": 5
+    },
+    {
+      "interaction_id": 4,
+      "date": "2026-03-02",
+      "tool_name": "Gemini",
+      "model": "Gemini 3 Thinking",
+      "purpose": "Verifying the methodological nature of the contribution to ensure it is not just a benchmark or dataset paper.",
+      "prompt": "does this paper's contribution follows this The primary contribution must be methodological or an application of the above algorithms. Papers whose main contribution is only a dataset, benchmark, or system are NOT allowed.",
+      "llm_response_used": "Yes",
+      "how_it_helped": "Explained the novel orthogonality regularizer and RDA optimization innovation, confirming it is a methodological contribution.",
+      "student_verification": "I skimmed the technical report's math section to confirm the presence of the custom objective function described by the LLM.",
+      "confidence_level": 3
+    },
+    {
+      "interaction_id": 5,
+      "date": "2026-03-02",
+      "tool_name": "Gemini",
+      "model": "Gemini 3 Thinking",
+      "purpose": "Assessing reproducibility and implementation difficulty for a standard CPU-only laptop.",
+      "prompt": "can this paper be reproducible or implemented using coding and if yes is it easy and if yes then can you find some repository which is available",
+      "llm_response_used": "Yes",
+      "how_it_helped": "Confirmed the algorithm is CPU-friendly and identified that while no official 2011 repo exists, the technical report provides sufficient pseudocode.",
+      "student_verification": "I downloaded the technical report (MSR-TR-2011-54) and verified that Algorithm 1 provides the steps needed for the RDA variant implementation.",
+      "confidence_level": 3
+    }
+  ],
+  "top_5_prompts": [
+    {
+      "rank": 1,
+      "interaction_id": 1,
+      "prompt": "I have to select a research paper which fulfils some constraints... find a research paper... and don't take the papers which are already taken by the other students",
+      "why_important": "This was the primary prompt for identifying a unique paper that adhered to the specific venue and year constraints of the exam."
+    },
+    {
+      "rank": 2,
+      "interaction_id": 3,
+      "prompt": "tell me how is this research paper \"Hierarchical SVM with orthogonality regularizer\" can I choose it? analyze that this research paper follows the constraints...",
+      "why_important": "This prompt provided the final validation for the selected paper, ensuring it hit all the mandatory requirements for method alignment and venue."
+    },
+    {
+      "rank": 3,
+      "interaction_id": 5,
+      "prompt": "can this paper be reproducible or implemented using coding and if yes is it easy and if yes then can you find some repository which is available",
+      "why_important": "Crucial for assessing feasibility on a personal laptop, a key requirement for the later reproduction phase in Part B."
+    },
+    {
+      "rank": 4,
+      "interaction_id": 4,
+      "prompt": "does this paper's contribution follows this The primary contribution must be methodological or an application of the above algorithms...",
+      "why_important": "Ensured that the paper's core value was mathematical/methodological rather than just a dataset, which is a grounds for disqualification."
+    },
+    {
+      "rank": 5,
+      "interaction_id": 2,
+      "prompt": "does this fulfils the dataset criteria... find 2 more papers may be different and their dataset for these for me to choose from.",
+      "why_important": "Helped identify the risk of restricted-access datasets in the initially proposed paper, leading to a safer, more compliant selection."
+    }
+  ],
+  "student_declaration": {
+    "statement": "I declare that this JSON file contains a complete and honest record of my LLM usage for Part A.",
+    "understanding_acknowledged": true,
+    "signature": "Agrapujya Lashkari",
+    "date": "2026-03-02"
+  }
+}
