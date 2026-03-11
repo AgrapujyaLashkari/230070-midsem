@@ -1,0 +1,64 @@
+{
+  "task_tag": "Task 2.3",
+  "student_verification": {
+    "name": "Agrapujya Lashkari",
+    "roll_number": "230070",
+    "declaration": "I confirm that all LLM interactions logged here are complete and accurate. Decisions regarding which components to ablate, the failure mode identification, and the reflection are my own."
+  },
+  "interactions": [
+    {
+      "prompt": "The original paper reports a 0/1 loss of 23.62% on the CCAT dataset for ORTHOGNL. My reproduction on the Wine dataset got ~94% accuracy. How should I honestly explain this gap in my report without making it sound like a failure?",
+      "purpose": "Get guidance on framing the performance gap between the toy experiment and the paper's original benchmark result honestly and correctly",
+      "code_used_verbatim": false,
+      "student_modification": "N/A"
+    },
+    {
+      "prompt": "What is a reproducibility checklist for a machine learning experiment? What items should I verify before saying my code is reproducible?",
+      "purpose": "Generate the items for the Reproducibility Checklist cell required at the end of Task 2.3",
+      "code_used_verbatim": false,
+      "student_modification": "N/A"
+    },
+    {
+      "prompt": "How do I set random seeds in NumPy, Python, and PyTorch to ensure reproducibility across runs?",
+      "purpose": "Implement and document random seed setting at the top of the notebook — confirmed seeds for numpy.random, torch.manual_seed, and random.seed",
+      "code_used_verbatim": false,
+      "student_modification": "N/A"
+    },
+    {
+      "prompt": "How do I generate a confusion matrix for a multi-class classification problem in scikit-learn and plot it with matplotlib?",
+      "purpose": "Create the required visualisation for the result — the confusion matrix plot saved to partB/results/",
+      "code_used_verbatim": false,
+      "student_modification": "Modified the plot title and axis labels, and changed the save path to match the partB/results/ directory structure."
+    }
+  ],
+  "top_5_prompts": [
+    {
+      "rank": 1,
+      "prompt": "The original paper reports a 0/1 loss of 23.62% on the CCAT dataset for ORTHOGNL. My reproduction on the Wine dataset got ~94% accuracy. How should I honestly explain this gap in my report without making it sound like a failure?",
+      "purpose": "Get guidance on framing the performance gap between the toy experiment and the paper's original benchmark result honestly and correctly",
+      "code_used_verbatim": false,
+      "student_modification": "N/A"
+    },
+    {
+      "rank": 2,
+      "prompt": "What is a reproducibility checklist for a machine learning experiment? What items should I verify before saying my code is reproducible?",
+      "purpose": "Generate the items for the Reproducibility Checklist cell required at the end of Task 2.3",
+      "code_used_verbatim": false,
+      "student_modification": "N/A"
+    },
+    {
+      "rank": 3,
+      "prompt": "How do I set random seeds in NumPy, Python, and PyTorch to ensure reproducibility across runs?",
+      "purpose": "Implement and document random seed setting at the top of the notebook — confirmed seeds for numpy.random, torch.manual_seed, and random.seed",
+      "code_used_verbatim": false,
+      "student_modification": "N/A"
+    },
+    {
+      "rank": 4,
+      "prompt": "How do I generate a confusion matrix for a multi-class classification problem in scikit-learn and plot it with matplotlib?",
+      "purpose": "Create the required visualisation for the result — the confusion matrix plot saved to partB/results/",
+      "code_used_verbatim": false,
+      "student_modification": "Modified the plot title and axis labels, and changed the save path to match the partB/results/ directory structure."
+    }
+  ]
+}

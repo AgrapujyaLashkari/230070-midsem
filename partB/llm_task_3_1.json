@@ -1,0 +1,77 @@
+{
+  "task_tag": "Task 3.1",
+  "student_verification": {
+    "name": "Agrapujya Lashkari",
+    "roll_number": "230070",
+    "declaration": "I confirm that all LLM interactions logged here are complete and accurate. Decisions regarding which components to ablate, the failure mode identification, and the reflection are my own."
+  },
+  "interactions": [
+    {
+      "prompt": "In the orthogonal transfer regularization term (1/2) * sum K_ij * |w_i^T w_j|, what is the mathematical effect of removing the absolute value? Would the model still be penalized for misaligned weight vectors?",
+      "purpose": "Understand the mathematical rationale for Ablation 1 — removing torch.abs() to allow negative dot products, confirming this is a meaningful independent ablation",
+      "code_used_verbatim": false,
+      "student_modification": "N/A"
+    },
+    {
+      "prompt": "If I want to ablate the ancestral transfer entirely from a hierarchical SVM, what is the simplest way to do it while keeping the model architecture the same?",
+      "purpose": "Confirm that setting K matrix off-diagonals to zero is the correct way to implement Ablation 2 (removing hierarchical transfer while keeping the diagonal regularization)",
+      "code_used_verbatim": false,
+      "student_modification": "N/A"
+    },
+    {
+      "prompt": "Can you help me write a matplotlib plot that shows two training loss curves on the same axis, with epoch on x-axis and total loss on y-axis? I want to save it to a file.",
+      "purpose": "Generate the comparative loss curve plot for ablation comparison — the save path and axis labels were changed to match the results directory",
+      "code_used_verbatim": true,
+      "student_modification": "Changed the save path from 'ablation_loss.png' to 'results/ablation_comparison.png'. Added a title that includes the dataset name and changed the figure size from default to (10, 5)."
+    },
+    {
+      "prompt": "My ablation experiment shows Ablation 2 (no ancestor transfer) converges slower and to a higher final loss than Ablation 1 (no absolute value). How should I interpret this from the perspective of the paper's claims?",
+      "purpose": "Reason about the interpretation of the ablation results — specifically why removing the K matrix off-diagonals has a larger effect than removing the absolute value",
+      "code_used_verbatim": false,
+      "student_modification": "N/A"
+    },
+    {
+      "prompt": "How do I compute and print the final test accuracy for two separate models using sklearn.metrics.accuracy_score on the same test set?",
+      "purpose": "Implement the accuracy measurement for both ablated models in the notebook",
+      "code_used_verbatim": false,
+      "student_modification": "Integrated the accuracy computation into the existing model evaluation loop rather than writing it as a standalone function."
+    }
+  ],
+  "top_5_prompts": [
+    {
+      "rank": 1,
+      "prompt": "In the orthogonal transfer regularization term (1/2) * sum K_ij * |w_i^T w_j|, what is the mathematical effect of removing the absolute value? Would the model still be penalized for misaligned weight vectors?",
+      "purpose": "Understand the mathematical rationale for Ablation 1 — removing torch.abs() to allow negative dot products, confirming this is a meaningful independent ablation",
+      "code_used_verbatim": false,
+      "student_modification": "N/A"
+    },
+    {
+      "rank": 2,
+      "prompt": "If I want to ablate the ancestral transfer entirely from a hierarchical SVM, what is the simplest way to do it while keeping the model architecture the same?",
+      "purpose": "Confirm that setting K matrix off-diagonals to zero is the correct way to implement Ablation 2 (removing hierarchical transfer while keeping the diagonal regularization)",
+      "code_used_verbatim": false,
+      "student_modification": "N/A"
+    },
+    {
+      "rank": 3,
+      "prompt": "Can you help me write a matplotlib plot that shows two training loss curves on the same axis, with epoch on x-axis and total loss on y-axis? I want to save it to a file.",
+      "purpose": "Generate the comparative loss curve plot for ablation comparison — the save path and axis labels were changed to match the results directory",
+      "code_used_verbatim": true,
+      "student_modification": "Changed the save path from 'ablation_loss.png' to 'results/ablation_comparison.png'. Added a title that includes the dataset name and changed the figure size from default to (10, 5)."
+    },
+    {
+      "rank": 4,
+      "prompt": "My ablation experiment shows Ablation 2 (no ancestor transfer) converges slower and to a higher final loss than Ablation 1 (no absolute value). How should I interpret this from the perspective of the paper's claims?",
+      "purpose": "Reason about the interpretation of the ablation results — specifically why removing the K matrix off-diagonals has a larger effect than removing the absolute value",
+      "code_used_verbatim": false,
+      "student_modification": "N/A"
+    },
+    {
+      "rank": 5,
+      "prompt": "How do I compute and print the final test accuracy for two separate models using sklearn.metrics.accuracy_score on the same test set?",
+      "purpose": "Implement the accuracy measurement for both ablated models in the notebook",
+      "code_used_verbatim": false,
+      "student_modification": "Integrated the accuracy computation into the existing model evaluation loop rather than writing it as a standalone function."
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "task_tag": "Task 1.3",
+  "student_verification": {
+    "name": "Agrapujya Lashkari",
+    "roll_number": "230070",
+    "declaration": "I confirm that all LLM interactions logged here are complete and accurate. Decisions regarding which components to ablate, the failure mode identification, and the reflection are my own."
+  },
+  "interactions": [
+    {
+      "prompt": "What is the TREELOSS loss function for hierarchical classification? How does it penalise misclassifications using the tree structure?",
+      "purpose": "Understand TREELOSS as the main baseline in the paper — specifically how it assigns penalties based on the graph distance in the category tree",
+      "code_used_verbatim": false,
+      "student_modification": "N/A"
+    },
+    {
+      "prompt": "The paper says TREELOSS downplays the difficulty of distinguishing similar leaf nodes. Can you explain why a smaller penalty for sibling misclassification would make learning harder at the leaf level?",
+      "purpose": "Articulate the limitation of TREELOSS that the orthogonal transfer method claims to fix",
+      "code_used_verbatim": false,
+      "student_modification": "N/A"
+    },
+    {
+      "prompt": "In what scenario would orthogonal hyperplanes be harmful? I'm thinking about a case where parent and child nodes genuinely share the same features.",
+      "purpose": "Reason about an edge case where the proposed method fails to outperform the baseline — needed for the final reflection point in Task 1.3",
+      "code_used_verbatim": false,
+      "student_modification": "N/A"
+    },
+    {
+      "prompt": "What is the general difference between modifying the loss function to encode the hierarchy versus modifying the regularisation term to encode it?",
+      "purpose": "Understand the high-level distinction between TREELOSS and the orthogonal transfer approach in terms of where the hierarchy information is embedded",
+      "code_used_verbatim": false,
+      "student_modification": "N/A"
+    }
+  ],
+  "top_5_prompts": [
+    {
+      "rank": 1,
+      "prompt": "What is the TREELOSS loss function for hierarchical classification? How does it penalise misclassifications using the tree structure?",
+      "purpose": "Understand TREELOSS as the main baseline in the paper — specifically how it assigns penalties based on the graph distance in the category tree",
+      "code_used_verbatim": false,
+      "student_modification": "N/A"
+    },
+    {
+      "rank": 2,
+      "prompt": "The paper says TREELOSS downplays the difficulty of distinguishing similar leaf nodes. Can you explain why a smaller penalty for sibling misclassification would make learning harder at the leaf level?",
+      "purpose": "Articulate the limitation of TREELOSS that the orthogonal transfer method claims to fix",
+      "code_used_verbatim": false,
+      "student_modification": "N/A"
+    },
+    {
+      "rank": 3,
+      "prompt": "In what scenario would orthogonal hyperplanes be harmful? I'm thinking about a case where parent and child nodes genuinely share the same features.",
+      "purpose": "Reason about an edge case where the proposed method fails to outperform the baseline — needed for the final reflection point in Task 1.3",
+      "code_used_verbatim": false,
+      "student_modification": "N/A"
+    },
+    {
+      "rank": 4,
+      "prompt": "What is the general difference between modifying the loss function to encode the hierarchy versus modifying the regularisation term to encode it?",
+      "purpose": "Understand the high-level distinction between TREELOSS and the orthogonal transfer approach in terms of where the hierarchy information is embedded",
+      "code_used_verbatim": false,
+      "student_modification": "N/A"
+    }
+  ]
+}

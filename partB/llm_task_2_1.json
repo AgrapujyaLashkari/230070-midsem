@@ -1,0 +1,77 @@
+{
+  "task_tag": "Task 2.1",
+  "student_verification": {
+    "name": "Agrapujya Lashkari",
+    "roll_number": "230070",
+    "declaration": "I confirm that all LLM interactions logged here are complete and accurate. Decisions regarding which components to ablate, the failure mode identification, and the reflection are my own."
+  },
+  "interactions": [
+    {
+      "prompt": "I need a real-world toy dataset for testing a 3-class hierarchical classification method. The original paper used RCV1-v2 text data. What would be a good small dataset to substitute it with that still has some real-world structure?",
+      "purpose": "Brainstorm appropriate toy dataset alternatives to the paper's original RCV1-v2 corpus for implementing hierarchical SVM",
+      "code_used_verbatim": false,
+      "student_modification": "N/A"
+    },
+    {
+      "prompt": "Can you show me how to load the sklearn Wine dataset, standardize its features using StandardScaler, and save it as a CSV file?",
+      "purpose": "Get a code template for loading and preprocessing the Wine dataset — I modified the path and added the target column before using it",
+      "code_used_verbatim": false,
+      "student_modification": "Changed the output path to partB/data/wine_dataset.csv and added documentation markdown cells explaining the hierarchy mapping"
+    },
+    {
+      "prompt": "Why is feature standardization (StandardScaler) especially important for SVM-based methods compared to, say, decision trees?",
+      "purpose": "Understand the preprocessing step for the markdown justification in the dataset setup cell",
+      "code_used_verbatim": false,
+      "student_modification": "N/A"
+    },
+    {
+      "prompt": "How would you map a 3-class dataset like Wine (classes 0, 1, 2) into a small hierarchy tree with a root node and two levels?",
+      "purpose": "Design the K matrix structure for the hierarchical SVM — needed to define node relationships for the Wine dataset",
+      "code_used_verbatim": false,
+      "student_modification": "N/A"
+    },
+    {
+      "prompt": "What are the key limitations of using a pre-generated toy dataset like Wine compared to the sparse high-dimensional text features in the original paper?",
+      "purpose": "Write the 'limitations' part of the dataset justification markdown cell in Task 2.1",
+      "code_used_verbatim": false,
+      "student_modification": "N/A"
+    }
+  ],
+  "top_5_prompts": [
+    {
+      "rank": 1,
+      "prompt": "I need a real-world toy dataset for testing a 3-class hierarchical classification method. The original paper used RCV1-v2 text data. What would be a good small dataset to substitute it with that still has some real-world structure?",
+      "purpose": "Brainstorm appropriate toy dataset alternatives to the paper's original RCV1-v2 corpus for implementing hierarchical SVM",
+      "code_used_verbatim": false,
+      "student_modification": "N/A"
+    },
+    {
+      "rank": 2,
+      "prompt": "Can you show me how to load the sklearn Wine dataset, standardize its features using StandardScaler, and save it as a CSV file?",
+      "purpose": "Get a code template for loading and preprocessing the Wine dataset — I modified the path and added the target column before using it",
+      "code_used_verbatim": false,
+      "student_modification": "Changed the output path to partB/data/wine_dataset.csv and added documentation markdown cells explaining the hierarchy mapping"
+    },
+    {
+      "rank": 3,
+      "prompt": "Why is feature standardization (StandardScaler) especially important for SVM-based methods compared to, say, decision trees?",
+      "purpose": "Understand the preprocessing step for the markdown justification in the dataset setup cell",
+      "code_used_verbatim": false,
+      "student_modification": "N/A"
+    },
+    {
+      "rank": 4,
+      "prompt": "How would you map a 3-class dataset like Wine (classes 0, 1, 2) into a small hierarchy tree with a root node and two levels?",
+      "purpose": "Design the K matrix structure for the hierarchical SVM — needed to define node relationships for the Wine dataset",
+      "code_used_verbatim": false,
+      "student_modification": "N/A"
+    },
+    {
+      "rank": 5,
+      "prompt": "What are the key limitations of using a pre-generated toy dataset like Wine compared to the sparse high-dimensional text features in the original paper?",
+      "purpose": "Write the 'limitations' part of the dataset justification markdown cell in Task 2.1",
+      "code_used_verbatim": false,
+      "student_modification": "N/A"
+    }
+  ]
+}

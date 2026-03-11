@@ -1,0 +1,51 @@
+{
+  "task_tag": "Task 4.2",
+  "student_verification": {
+    "name": "Agrapujya Lashkari",
+    "roll_number": "230070",
+    "declaration": "I confirm that all LLM interactions logged here are complete and accurate. Decisions regarding which components to ablate, the failure mode identification, and the reflection are my own."
+  },
+  "interactions": [
+    {
+      "prompt": "What fields should a proper LLM usage disclosure JSON file contain for an academic ML course submission? I need fields for the task tag, whether code was used verbatim, and a declaration.",
+      "purpose": "Understand the required structure for the LLM disclosure JSON format before writing the first disclosure file",
+      "code_used_verbatim": false,
+      "student_modification": "N/A"
+    },
+    {
+      "prompt": "Can you show me a JSON schema that has: a task_tag string, a student_verification object with name/roll_number/declaration, an interactions array with prompt/purpose/code_used_verbatim/student_modification fields, and a top_5_prompts array with rank?",
+      "purpose": "Get the exact JSON structure to validate the format of all disclosure files before writing them",
+      "code_used_verbatim": false,
+      "student_modification": "N/A"
+    },
+    {
+      "prompt": "How do I check if a JSON file is valid and properly formatted in Python without any external libraries?",
+      "purpose": "Verify all generated JSON disclosure files are valid before submission",
+      "code_used_verbatim": false,
+      "student_modification": "N/A"
+    }
+  ],
+  "top_5_prompts": [
+    {
+      "rank": 1,
+      "prompt": "What fields should a proper LLM usage disclosure JSON file contain for an academic ML course submission? I need fields for the task tag, whether code was used verbatim, and a declaration.",
+      "purpose": "Understand the required structure for the LLM disclosure JSON format before writing the first disclosure file",
+      "code_used_verbatim": false,
+      "student_modification": "N/A"
+    },
+    {
+      "rank": 2,
+      "prompt": "Can you show me a JSON schema that has: a task_tag string, a student_verification object with name/roll_number/declaration, an interactions array with prompt/purpose/code_used_verbatim/student_modification fields, and a top_5_prompts array with rank?",
+      "purpose": "Get the exact JSON structure to validate the format of all disclosure files before writing them",
+      "code_used_verbatim": false,
+      "student_modification": "N/A"
+    },
+    {
+      "rank": 3,
+      "prompt": "How do I check if a JSON file is valid and properly formatted in Python without any external libraries?",
+      "purpose": "Verify all generated JSON disclosure files are valid before submission",
+      "code_used_verbatim": false,
+      "student_modification": "N/A"
+    }
+  ]
+}

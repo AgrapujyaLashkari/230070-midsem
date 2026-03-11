@@ -1,0 +1,77 @@
+{
+  "task_tag": "Task 1.2",
+  "student_verification": {
+    "name": "Agrapujya Lashkari",
+    "roll_number": "230070",
+    "declaration": "I confirm that all LLM interactions logged here are complete and accurate. Decisions regarding which components to ablate, the failure mode identification, and the reflection are my own."
+  },
+  "interactions": [
+    {
+      "prompt": "In the hierarchical orthogonal transfer paper, the K matrix controls relationships between ancestor and child nodes. What would happen mathematically if the K matrix is not positive semi-definite?",
+      "purpose": "Understand Assumption 2 — why the PSD condition on the K matrix is essential for convexity, as referenced in Theorem 1",
+      "code_used_verbatim": false,
+      "student_modification": "N/A"
+    },
+    {
+      "prompt": "Can you explain what 'generalization-specialization' means in the context of a category tree, and why a flat taxonomy would violate this assumption?",
+      "purpose": "Formulate Assumption 1 clearly — the semantic structure of the hierarchy must follow a parent-to-child specialization relationship",
+      "code_used_verbatim": false,
+      "student_modification": "N/A"
+    },
+    {
+      "prompt": "The paper sets larger diagonal entries K_ii for higher-level nodes. What assumption about classification difficulty does this imply?",
+      "purpose": "Understand Assumption 3 — that classification is assumed to be easier at higher hierarchy levels than at leaf nodes",
+      "code_used_verbatim": false,
+      "student_modification": "N/A"
+    },
+    {
+      "prompt": "If a node's child classes are actually indistinct from each other in feature space, would the orthogonal constraint help or hurt? What assumption is being violated?",
+      "purpose": "Derive a concrete violation scenario for Assumption 1 to complete the violation-scenario field",
+      "code_used_verbatim": false,
+      "student_modification": "N/A"
+    },
+    {
+      "prompt": "What does eigenvalue decomposition tell us about whether a matrix is positive semi-definite? Can you give a simple example?",
+      "purpose": "Understand the mathematical basis for the PSD condition in Theorem 1 referenced by Assumption 2",
+      "code_used_verbatim": false,
+      "student_modification": "N/A"
+    }
+  ],
+  "top_5_prompts": [
+    {
+      "rank": 1,
+      "prompt": "In the hierarchical orthogonal transfer paper, the K matrix controls relationships between ancestor and child nodes. What would happen mathematically if the K matrix is not positive semi-definite?",
+      "purpose": "Understand Assumption 2 — why the PSD condition on the K matrix is essential for convexity, as referenced in Theorem 1",
+      "code_used_verbatim": false,
+      "student_modification": "N/A"
+    },
+    {
+      "rank": 2,
+      "prompt": "Can you explain what 'generalization-specialization' means in the context of a category tree, and why a flat taxonomy would violate this assumption?",
+      "purpose": "Formulate Assumption 1 clearly — the semantic structure of the hierarchy must follow a parent-to-child specialization relationship",
+      "code_used_verbatim": false,
+      "student_modification": "N/A"
+    },
+    {
+      "rank": 3,
+      "prompt": "The paper sets larger diagonal entries K_ii for higher-level nodes. What assumption about classification difficulty does this imply?",
+      "purpose": "Understand Assumption 3 — that classification is assumed to be easier at higher hierarchy levels than at leaf nodes",
+      "code_used_verbatim": false,
+      "student_modification": "N/A"
+    },
+    {
+      "rank": 4,
+      "prompt": "If a node's child classes are actually indistinct from each other in feature space, would the orthogonal constraint help or hurt? What assumption is being violated?",
+      "purpose": "Derive a concrete violation scenario for Assumption 1 to complete the violation-scenario field",
+      "code_used_verbatim": false,
+      "student_modification": "N/A"
+    },
+    {
+      "rank": 5,
+      "prompt": "What does eigenvalue decomposition tell us about whether a matrix is positive semi-definite? Can you give a simple example?",
+      "purpose": "Understand the mathematical basis for the PSD condition in Theorem 1 referenced by Assumption 2",
+      "code_used_verbatim": false,
+      "student_modification": "N/A"
+    }
+  ]
+}

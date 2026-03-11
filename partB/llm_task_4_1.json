@@ -1,0 +1,64 @@
+{
+  "task_tag": "Task 4.1",
+  "student_verification": {
+    "name": "Agrapujya Lashkari",
+    "roll_number": "230070",
+    "declaration": "I confirm that all LLM interactions logged here are complete and accurate. Decisions regarding which components to ablate, the failure mode identification, and the reflection are my own."
+  },
+  "interactions": [
+    {
+      "prompt": "Can you give me the standard IEEE conference LaTeX template structure with the correct document class, font size, and margin settings?",
+      "purpose": "Set up the LaTeX file structure for the report — used the IEEEtran document class as the base template",
+      "code_used_verbatim": false,
+      "student_modification": "Removed the abstract environment and adapted the section structure to match the specific report requirements (paper summary, reproduction, ablation, failure mode, reflection)."
+    },
+    {
+      "prompt": "How do I write a concise one-paragraph summary of a machine learning paper that explains (1) the problem it solves, (2) the method, and (3) the claimed improvement in my own words?",
+      "purpose": "Structure the paper summary section of the report — the actual content and interpretation of the Orthogonal Transfer paper is my own",
+      "code_used_verbatim": false,
+      "student_modification": "N/A"
+    },
+    {
+      "prompt": "I want to write a short honest reflection for my ML report. I need to cover: what I couldn't implement, what surprised me, and what I'd revisit. Can you give me a structure for this that doesn't sound generic?",
+      "purpose": "Structure the reflection section — the actual content about what was surprising (the K matrix PSD condition) and what couldn't be implemented (kernel version) is my own observation",
+      "code_used_verbatim": false,
+      "student_modification": "N/A"
+    },
+    {
+      "prompt": "How do I include an image file in a LaTeX IEEE report using \\includegraphics? I want the figure to be centered with a caption.",
+      "purpose": "Figure out how to embed the results plots (ablation comparison, failure mode bar chart) into the LaTeX report",
+      "code_used_verbatim": false,
+      "student_modification": "N/A"
+    }
+  ],
+  "top_5_prompts": [
+    {
+      "rank": 1,
+      "prompt": "Can you give me the standard IEEE conference LaTeX template structure with the correct document class, font size, and margin settings?",
+      "purpose": "Set up the LaTeX file structure for the report — used the IEEEtran document class as the base template",
+      "code_used_verbatim": false,
+      "student_modification": "Removed the abstract environment and adapted the section structure to match the specific report requirements (paper summary, reproduction, ablation, failure mode, reflection)."
+    },
+    {
+      "rank": 2,
+      "prompt": "How do I write a concise one-paragraph summary of a machine learning paper that explains (1) the problem it solves, (2) the method, and (3) the claimed improvement in my own words?",
+      "purpose": "Structure the paper summary section of the report — the actual content and interpretation of the Orthogonal Transfer paper is my own",
+      "code_used_verbatim": false,
+      "student_modification": "N/A"
+    },
+    {
+      "rank": 3,
+      "prompt": "I want to write a short honest reflection for my ML report. I need to cover: what I couldn't implement, what surprised me, and what I'd revisit. Can you give me a structure for this that doesn't sound generic?",
+      "purpose": "Structure the reflection section — the actual content about what was surprising (the K matrix PSD condition) and what couldn't be implemented (kernel version) is my own observation",
+      "code_used_verbatim": false,
+      "student_modification": "N/A"
+    },
+    {
+      "rank": 4,
+      "prompt": "How do I include an image file in a LaTeX IEEE report using \\includegraphics? I want the figure to be centered with a caption.",
+      "purpose": "Figure out how to embed the results plots (ablation comparison, failure mode bar chart) into the LaTeX report",
+      "code_used_verbatim": false,
+      "student_modification": "N/A"
+    }
+  ]
+}

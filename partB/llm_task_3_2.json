@@ -1,0 +1,77 @@
+{
+  "task_tag": "Task 3.2",
+  "student_verification": {
+    "name": "Agrapujya Lashkari",
+    "roll_number": "230070",
+    "declaration": "I confirm that all LLM interactions logged here are complete and accurate. Decisions regarding which components to ablate, the failure mode identification, and the reflection are my own."
+  },
+  "interactions": [
+    {
+      "prompt": "I want to construct a synthetic dataset that is linearly separable but only along a single feature. All other features should be pure noise. How do I generate this in numpy and assign 3 class labels using threshold rules on feature 0?",
+      "purpose": "Generate the failure mode dataset where classification depends on a single shared feature axis across all hierarchy levels",
+      "code_used_verbatim": false,
+      "student_modification": "Changed the class threshold values from -1/+1 to -0.5/+0.5 to create a tighter decision boundary. Increased the noise dimension count from 5 to 9 to make the problem harder."
+    },
+    {
+      "prompt": "Why would forcing orthogonality between a parent node's weight vector and its child's weight vector cause the child to fail if both parent and child need to use the same feature for discrimination?",
+      "purpose": "Understand and articulate the connection between the failure mode dataset and Assumption 1 (generalization-specialization) from Task 1.2",
+      "code_used_verbatim": false,
+      "student_modification": "N/A"
+    },
+    {
+      "prompt": "How do I train a simple flat nn.Linear classifier with CrossEntropyLoss in PyTorch for comparison against my hierarchical model in the failure scenario?",
+      "purpose": "Implement the flat baseline model that serves as an upper bound in the failure mode comparison bar chart",
+      "code_used_verbatim": false,
+      "student_modification": "Added the same training loop structure and epoch count as the hierarchical model so the comparison is fair."
+    },
+    {
+      "prompt": "Can you help me create a matplotlib bar chart showing two bars: one for the hierarchical model and one for a flat baseline, with accuracy on the y-axis and different colors (red for fail, green for success)?",
+      "purpose": "Generate the required visualisation comparing the two models under the failure mode scenario",
+      "code_used_verbatim": true,
+      "student_modification": "Changed bar labels to 'Hierarchical (Orthogonal)' and 'Flat Baseline'. Added percentage annotations on top of each bar and saved the figure to partB/results/failure_mode.png."
+    },
+    {
+      "prompt": "What concrete modification could help the hierarchical orthogonal SVM perform better when classes genuinely share the same low-level features? I want one short specific suggestion.",
+      "purpose": "Generate the 'one sentence suggested modification' required at the end of Task 3.2 — I evaluated the suggestion and selected the most relevant one",
+      "code_used_verbatim": false,
+      "student_modification": "N/A"
+    }
+  ],
+  "top_5_prompts": [
+    {
+      "rank": 1,
+      "prompt": "I want to construct a synthetic dataset that is linearly separable but only along a single feature. All other features should be pure noise. How do I generate this in numpy and assign 3 class labels using threshold rules on feature 0?",
+      "purpose": "Generate the failure mode dataset where classification depends on a single shared feature axis across all hierarchy levels",
+      "code_used_verbatim": false,
+      "student_modification": "Changed the class threshold values from -1/+1 to -0.5/+0.5 to create a tighter decision boundary. Increased the noise dimension count from 5 to 9 to make the problem harder."
+    },
+    {
+      "rank": 2,
+      "prompt": "Why would forcing orthogonality between a parent node's weight vector and its child's weight vector cause the child to fail if both parent and child need to use the same feature for discrimination?",
+      "purpose": "Understand and articulate the connection between the failure mode dataset and Assumption 1 (generalization-specialization) from Task 1.2",
+      "code_used_verbatim": false,
+      "student_modification": "N/A"
+    },
+    {
+      "rank": 3,
+      "prompt": "How do I train a simple flat nn.Linear classifier with CrossEntropyLoss in PyTorch for comparison against my hierarchical model in the failure scenario?",
+      "purpose": "Implement the flat baseline model that serves as an upper bound in the failure mode comparison bar chart",
+      "code_used_verbatim": false,
+      "student_modification": "Added the same training loop structure and epoch count as the hierarchical model so the comparison is fair."
+    },
+    {
+      "rank": 4,
+      "prompt": "Can you help me create a matplotlib bar chart showing two bars: one for the hierarchical model and one for a flat baseline, with accuracy on the y-axis and different colors (red for fail, green for success)?",
+      "purpose": "Generate the required visualisation comparing the two models under the failure mode scenario",
+      "code_used_verbatim": true,
+      "student_modification": "Changed bar labels to 'Hierarchical (Orthogonal)' and 'Flat Baseline'. Added percentage annotations on top of each bar and saved the figure to partB/results/failure_mode.png."
+    },
+    {
+      "rank": 5,
+      "prompt": "What concrete modification could help the hierarchical orthogonal SVM perform better when classes genuinely share the same low-level features? I want one short specific suggestion.",
+      "purpose": "Generate the 'one sentence suggested modification' required at the end of Task 3.2 — I evaluated the suggestion and selected the most relevant one",
+      "code_used_verbatim": false,
+      "student_modification": "N/A"
+    }
+  ]
+}

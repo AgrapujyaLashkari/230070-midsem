@@ -1,0 +1,77 @@
+{
+  "task_tag": "Task 2.2",
+  "student_verification": {
+    "name": "Agrapujya Lashkari",
+    "roll_number": "230070",
+    "declaration": "I confirm that all LLM interactions logged here are complete and accurate. Decisions regarding which components to ablate, the failure mode identification, and the reflection are my own."
+  },
+  "interactions": [
+    {
+      "prompt": "I want to implement the Hierarchical SVM with Orthogonal Transfer regularizer from this paper using PyTorch. The regularisation term is (1/2) * sum_ij K_ij * |w_i^T w_j|. How do I implement this as a custom loss term in a PyTorch nn.Module?",
+      "purpose": "Get a starting code scaffold for the HierarchicalSVM class — the orthogonal_regularization() method and the K matrix structure were adapted from the LLM response",
+      "code_used_verbatim": false,
+      "student_modification": "Changed the loop structure to match the K matrix symmetric indexing used in the paper. Added the diagonal term K_ii = 2.0 based on my reading of Equation 6. Rewrote the forward method to return raw scores."
+    },
+    {
+      "prompt": "The paper uses a Crammer-Singer style hinge loss for the hierarchical constraint. How do I implement a hinge loss that compares the score of the correct node against its sibling at each level of the tree?",
+      "purpose": "Understand and implement the hierarchical hinge loss used in the training loop — the per-sample label-conditional structure was my own design based on the tree topology",
+      "code_used_verbatim": false,
+      "student_modification": "The LLM gave a generic pairwise hinge loss. I rewrote it to be label-conditional based on the specific 3-level tree structure used in my experiment."
+    },
+    {
+      "prompt": "Why use Adam optimizer for training an SVM-type model instead of SGD? Are there any concerns with using Adam here?",
+      "purpose": "Justify the choice of Adam optimizer in the training loop's markdown annotation",
+      "code_used_verbatim": false,
+      "student_modification": "N/A"
+    },
+    {
+      "prompt": "How do I implement a recursive prediction function in PyTorch that traverses a 3-level hierarchy tree by comparing node scores at each level?",
+      "purpose": "Build the recursive_predict function for inference — the LLM gave the general structure, I adapted it to the specific 5-node tree topology of my experiment",
+      "code_used_verbatim": false,
+      "student_modification": "Adapted the if-else branching to match the specific node indices (0=root, 1=left child, 2=right child, 3=left-left grandchild, 4=right-right grandchild) in my K matrix."
+    },
+    {
+      "prompt": "Is there a way to verify that two PyTorch tensors are approximately orthogonal after training? How do I check if the dot product of two weight vectors approaches zero?",
+      "purpose": "Write a post-training sanity check to verify that the orthogonal regularization is actually working — used to add the verification step at the end of the notebook",
+      "code_used_verbatim": false,
+      "student_modification": "N/A"
+    }
+  ],
+  "top_5_prompts": [
+    {
+      "rank": 1,
+      "prompt": "I want to implement the Hierarchical SVM with Orthogonal Transfer regularizer from this paper using PyTorch. The regularisation term is (1/2) * sum_ij K_ij * |w_i^T w_j|. How do I implement this as a custom loss term in a PyTorch nn.Module?",
+      "purpose": "Get a starting code scaffold for the HierarchicalSVM class — the orthogonal_regularization() method and the K matrix structure were adapted from the LLM response",
+      "code_used_verbatim": false,
+      "student_modification": "Changed the loop structure to match the K matrix symmetric indexing used in the paper. Added the diagonal term K_ii = 2.0 based on my reading of Equation 6. Rewrote the forward method to return raw scores."
+    },
+    {
+      "rank": 2,
+      "prompt": "The paper uses a Crammer-Singer style hinge loss for the hierarchical constraint. How do I implement a hinge loss that compares the score of the correct node against its sibling at each level of the tree?",
+      "purpose": "Understand and implement the hierarchical hinge loss used in the training loop — the per-sample label-conditional structure was my own design based on the tree topology",
+      "code_used_verbatim": false,
+      "student_modification": "The LLM gave a generic pairwise hinge loss. I rewrote it to be label-conditional based on the specific 3-level tree structure used in my experiment."
+    },
+    {
+      "rank": 3,
+      "prompt": "Why use Adam optimizer for training an SVM-type model instead of SGD? Are there any concerns with using Adam here?",
+      "purpose": "Justify the choice of Adam optimizer in the training loop's markdown annotation",
+      "code_used_verbatim": false,
+      "student_modification": "N/A"
+    },
+    {
+      "rank": 4,
+      "prompt": "How do I implement a recursive prediction function in PyTorch that traverses a 3-level hierarchy tree by comparing node scores at each level?",
+      "purpose": "Build the recursive_predict function for inference — the LLM gave the general structure, I adapted it to the specific 5-node tree topology of my experiment",
+      "code_used_verbatim": false,
+      "student_modification": "Adapted the if-else branching to match the specific node indices (0=root, 1=left child, 2=right child, 3=left-left grandchild, 4=right-right grandchild) in my K matrix."
+    },
+    {
+      "rank": 5,
+      "prompt": "Is there a way to verify that two PyTorch tensors are approximately orthogonal after training? How do I check if the dot product of two weight vectors approaches zero?",
+      "purpose": "Write a post-training sanity check to verify that the orthogonal regularization is actually working — used to add the verification step at the end of the notebook",
+      "code_used_verbatim": false,
+      "student_modification": "N/A"
+    }
+  ]
+}
